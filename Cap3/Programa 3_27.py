@@ -21,7 +21,7 @@ elif tipo == 4:
 else:
     costo_diario = 0    
 if costo_diario == 0:
-    print('\nEl tipo de enfermedad ingresado es incorrecto'.upper());
+    print('\nEl tipo de enfermedad ingresado es incorrecto'.upper())
 else:
     costo_internacion = costo_diario * dias
     if edad < 16:
