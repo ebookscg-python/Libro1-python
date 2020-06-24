@@ -45,6 +45,6 @@ except Exception as error:
 
 # CP3: se proporcionan 2 números enteros.
 print('CP3 --> El promedio es =', calcula_promedio(4, 8))  
-# CP4: se proporcionan 8 números reales a la función.
+# CP4: se proporcionan 8 números reales.
 prom = calcula_promedio(3.5, 8.2, -9.6, 12.2, 25.7, 48.7, -41.55, 39.33)
 print('CP4 --> El promedio es =', prom)  
