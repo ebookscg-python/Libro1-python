@@ -6,7 +6,7 @@ Problema 5.9
 import lecturas
 
 def guarda_calificaciones(nom_arch, total):
-    """ Guarda las calificaciones leídas por terminal en un archivo de texto. 
+    """ Almacena las calificaciones leídas por terminal en un archivo de texto. 
     En la primera línea guarda el total y cada calificación se escribe en una 
     línea diferente.
     
