@@ -7,7 +7,7 @@ al final y dejando la frase solo con minúsculas.
 """
 
 frase = input('Ingrese la frase: ')
-frase_minusculas = frase.lower()  # Pasa a minúsculas la frase.
+frase_minusculas = frase.lower()  # Pasa la frase a minúsculas.
 # Extrae los 2 primeros caracteres.
 dos_primeras_letras = frase_minusculas[0:2]  
 resto = frase_minusculas[2:]  # Extrae el resto de la frase. 
