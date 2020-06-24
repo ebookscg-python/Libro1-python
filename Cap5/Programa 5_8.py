@@ -35,7 +35,7 @@ def cuenta_palabras(nombre):
 # -------------------------------------------------------------------------              
 nombre = input('\nNombre del archivo que quiere analizar: ') 
 try:
-    print('\nTotal de palabras con letras ordenadas:', cuenta_palabras(nombre))
+    print('\nCantidad de palabras con letras ordenadas:', cuenta_palabras(nombre))
 except Exception:
     print('Problemas con el archivo.')      
     
