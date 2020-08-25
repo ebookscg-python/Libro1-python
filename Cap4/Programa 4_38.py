@@ -8,14 +8,19 @@ mayúscula a minúscula e imprime el texto modificado.
 
 texto = input('\nIngrese el texto a modificar: ')
 letra = input('Ingrese la letra que debe pasarse a minúsculas: ')
+bandera = False
 while letra != '':
     nuevo_texto = ''
     pos = texto.find(letra)
     while pos != -1:
-        if pos > 0:          
+         if pos > 0:          
             nuevo_texto +=  texto[0:pos] + chr((ord(letra) + 32))
         else:
-            nuevo_texto += texto[0:pos + 1]
+            if len(nuevo_texto) == 0 or (nuevo_texto[0] == letra and not bandera):
+                nuevo_texto += texto[0:pos + 1]
+                bandera = True
+            else:
+                nuevo_texto += chr((ord(letra) + 32))
         texto = texto[pos + 1:]
         pos = texto.find(letra)
     letra = input('Ingrese la letra que debe pasarse a minúsculas: ')
