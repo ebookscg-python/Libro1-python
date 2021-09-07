@@ -144,6 +144,8 @@ def calcula_edad(fecha_nac):
     edad = 0
     if anio_act > anio_nac:
         edad = anio_act - anio_nac - 1   
-        if mes_act >= mes_nac and dia_act >= dia_nac:
+        if mes_act > mes_nac:
+            edad += 1
+        elif mes_act == mes_nac and dia_act > dia_nac:
             edad += 1
     return edad
